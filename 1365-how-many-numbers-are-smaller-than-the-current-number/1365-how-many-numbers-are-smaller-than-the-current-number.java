@@ -3,9 +3,8 @@ class Solution {
         int result[] = new int[nums.length];
         for(int i=0; i<nums.length; i++){
             for(int j=0; j<nums.length; j++){
-                if(j!=i && nums[j]<nums[i])
-                    result[i]++;
-                    
+                if(nums[i]>nums[j])
+                    result[i]++;       
             }
         }
         return result;
