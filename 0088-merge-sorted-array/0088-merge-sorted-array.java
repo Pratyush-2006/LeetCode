@@ -4,10 +4,12 @@ class Solution {
 
         while(r2>=0){
             if(r1>=0 && nums1[r1]>nums2[r2]){
-                nums1[w]=nums1[r1--];
+                nums1[w]=nums1[r1];
+                r1--;
             }
             else{
-                nums1[w]=nums2[r2--];
+                nums1[w]=nums2[r2];
+                r2--;
             }
             w--;
         }
